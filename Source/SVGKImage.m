@@ -872,8 +872,9 @@ static NSMutableDictionary* globalSVGKImageCache;
 	
 	float smallestScaleUp = MIN( wScale, hScale );
 	
-	if( smallestScaleUp < 1.0f )
-		smallestScaleUp = MAX( wScale, hScale ); // instead of scaling-up the smallest, scale-down the largest
+    // [Modified by Thinkyeah] it is centerCrop not fitCenter
+//	if( smallestScaleUp < 1.0f )
+//		smallestScaleUp = MAX( wScale, hScale ); // instead of scaling-up the smallest, scale-down the largest
 	
 	self.size = CGSizeApplyAffineTransform( self.size, CGAffineTransformMakeScale( smallestScaleUp, smallestScaleUp));
 }

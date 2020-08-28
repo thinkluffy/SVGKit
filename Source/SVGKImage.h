@@ -43,7 +43,8 @@
 @class SVGKSource;
 @class SVGKParseResult;
 
-#define ENABLE_GLOBAL_IMAGE_CACHE_FOR_SVGKIMAGE_IMAGE_NAMED 1 // if ENABLED, then ALL instances created with imageNamed: are shared, and are NEVER RELEASED
+// [Modified by Thinkyeah]
+#define ENABLE_GLOBAL_IMAGE_CACHE_FOR_SVGKIMAGE_IMAGE_NAMED 0 // if ENABLED, then ALL instances created with imageNamed: are shared, and are NEVER RELEASED
 
 @class SVGDefsElement;
 
